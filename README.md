@@ -1,5 +1,3 @@
-# fangs.cat offical awesome website so cool
+# fangs.cat
 
-Website is live at https://catfxngs.com, the temporary domain.
-
-The code for this site is currently a placeholder until renewal!
+Deployed at https://catfxngs.github.io/fangs.cat/ while domain issues are sorted.
