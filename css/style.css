@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("comic-sans-ms/comici.ttf");
+}
+
+/* marquee styles ^_^ */
+.marquee {
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  /* pauses animation for my retarded fellas */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__content {
+      animation-play-state: paused !important;
+    }
+  }
+  
+  .marquee--top {
+    position: fixed;
+    top: 0;
+  }
+
+  .marquee--bot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* enable animation */
+  .enable-animation .marquee__content {
+    animation: scroll 50s linear infinite;
+  }
+  
+  /* reverse animation */
+  .marquee--reverse .marquee__content {
+    animation-direction: reverse;
+  }
+  
+  /* pause on hover ?? if i use this */
+  .marquee--hover-pause:hover .marquee__content {
+    animation-play-state: paused;
+  }
+  
+  /* size parent based on content. parent width = both */
+  .marquee--fit-content {
+    max-width: fit-content;
+  }
+  
+  /* a fit-content sizing fix i stole lol */
+  .marquee--pos-absolute .marquee__content:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* enable position absolute animation on duplicate */
+  .enable-animation .marquee--pos-absolute .marquee__content:last-child {
+    animation-name: scroll-abs;
+  }
+  
+  /* keyframe animation to create illusion of infinite loop by duping container */
+  @keyframes scroll-abs {
+    from {
+      transform: translateX(calc(100% + var(--gap)));
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
