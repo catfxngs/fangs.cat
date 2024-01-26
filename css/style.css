@@ -3,6 +3,10 @@
     src: url("comic-sans-ms/comici.ttf");
 }
 
+body {
+    cursor: url('cursor/toro.cur'), auto;
+}
+
 /* marquee styles ^_^ */
 .marquee {
     --gap: 1rem;
