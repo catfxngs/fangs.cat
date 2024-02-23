@@ -16,7 +16,7 @@ h1 {
 
 /* marquee styles ^_^ */
 .marquee {
-  --gap: 1rem;
+  --gap: 0.25rem;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -68,8 +68,8 @@ h1 {
   animation-direction: reverse;
 }
 
-/* pause on hover ?? if i use this */
-.marquee__hover-pause:hover .marquee__content {
+/* pause on hover */
+.enable-animation.marquee:hover > * {
   animation-play-state: paused;
 }
 
@@ -102,7 +102,7 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background: rgb(13, 13, 13);
-    color: white;
+    background: #0d0d0d;
+    color: #ffffff;
   }
 }
