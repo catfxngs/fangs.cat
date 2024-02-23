@@ -41,7 +41,7 @@ h1 {
   }
 }
 
-/* pauses animation for my retarded fellas */
+/* pauses animation for my silly lil fellas */
 @media (prefers-reduced-motion: reduce) {
   .marquee__content {
     animation-play-state: paused !important;
