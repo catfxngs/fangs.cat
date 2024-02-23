@@ -48,12 +48,12 @@ h1 {
   }
 }
 
-.marquee--top {
+.marquee__top {
   position: fixed;
   top: 0;
 }
 
-.marquee--bot {
+.marquee__bot {
   position: fixed;
   bottom: 0;
 }
@@ -64,29 +64,29 @@ h1 {
 }
 
 /* reverse animation */
-.marquee--reverse .marquee__content {
+.marquee__reverse .marquee__content {
   animation-direction: reverse;
 }
 
 /* pause on hover ?? if i use this */
-.marquee--hover-pause:hover .marquee__content {
+.marquee__hover-pause:hover .marquee__content {
   animation-play-state: paused;
 }
 
 /* size parent based on content. parent width = both */
-.marquee--fit-content {
+.marquee__fit-content {
   max-width: fit-content;
 }
 
 /* a fit-content sizing fix i stole lol */
-.marquee--pos-absolute .marquee__content:last-child {
+.marquee__pos-absolute .marquee__content:last-child {
   position: absolute;
   top: 0;
   left: 0;
 }
 
 /* enable position absolute animation on duplicate */
-.enable-animation .marquee--pos-absolute .marquee__content:last-child {
+.enable-animation .marquee__pos-absolute .marquee__content:last-child {
   animation-name: scroll-abs;
 }
 
