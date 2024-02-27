@@ -54,12 +54,12 @@ h1 {
 }
 
 .marquee__top {
-  position: fixed;
+  position: static;
   top: 0;
 }
 
 .marquee__bot {
-  position: fixed;
+  position: static;
   bottom: 0;
 }
 
