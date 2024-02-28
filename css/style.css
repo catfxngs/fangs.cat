@@ -15,6 +15,26 @@ h1 {
   font-family: 'Comic Sans MS';
 }
 
+ /* new link */
+a:link {
+  color: purple;
+}
+
+/* visited link */
+a:visited {
+  color: blueviolet;
+}
+
+/* hovering over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: pink;
+} 
+
 #footertext {
   font-size: 12px;
 }
@@ -110,4 +130,23 @@ h1 {
     background: #0d0d0d;
     color: #ffffff;
   }
+  /* new link */
+  a:link {
+    color: plum;
+  }
+
+  /* visited link */
+  a:visited {
+    color: purple;
+  }
+
+  /* hovering over link */
+  a:hover {
+    color: hotpink;
+  }
+
+  /* selected link */
+  a:active {
+    color: blueviolet;
+  } 
 }
