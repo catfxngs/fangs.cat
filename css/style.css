@@ -47,7 +47,7 @@ a:active {
 }
 
 .headerpic {
-  margin-top: -50px;
+  margin-top: -85px;
   height: 150px
 }
 
@@ -171,14 +171,29 @@ a:active {
   }
 }
 
+/* mobile styles */
 @media screen and (max-width: 800px) {
+  /* shrinks navbar proportions */
   .navbar {
     margin: 10px;
     
   }
-
   .navlink {
     padding: 10px 12px;
+  }
+
+  /* 
+  honestly more of a temporary fix, but to prevent the marquee 
+  from overlapping with content, the bottom navbar is sticky 
+  when reaching end of page! this is Fine for right now. it Works.
+  */
+  .marquee__top {
+    position: fixed;
+    top: 0;
+  }
+  .marquee__bot {
+    position: sticky;
+    bottom: 0;
   }
 }
 
