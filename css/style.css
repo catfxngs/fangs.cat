@@ -13,6 +13,7 @@ body {
 
 h1 {
   font-family: 'Comic Sans MS';
+  margin: 50px;
 }
 
 a {
@@ -26,7 +27,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: blueviolet;
+  color: purple;
 }
 
 /* hovering over link */
@@ -38,6 +39,31 @@ a:hover {
 a:active {
   color: pink;
 } 
+
+.headerpic {
+  margin-top: -50px;
+  height: 150px
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.navlist {
+  float: left;
+}
+
+.navlink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 #footertext {
   font-size: 12px;
@@ -78,12 +104,12 @@ a:active {
 }
 
 .marquee__top {
-  position: static;
+  position: fixed;
   top: 0;
 }
 
 .marquee__bot {
-  position: static;
+  position: fixed;
   bottom: 0;
 }
 
@@ -141,7 +167,7 @@ a:active {
 
   /* visited link */
   a:visited {
-    color: purple;
+    color: plum;
   }
 
   /* hovering over link */
