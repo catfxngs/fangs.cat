@@ -180,7 +180,7 @@ bts {
 
 /* mobile styles */
 @media screen and (max-width: 800px) {
-  h1{
+  h1 {
     font-size: 28px;
   }
   /* shrinks navbar proportions */
