@@ -1,4 +1,6 @@
 html {
+  background: #0d0d0d;
+  color: #ffffff;
   cursor: url('../cursor/toro.cur'), auto;
   height: 100vh;
   width: 100vw;
@@ -20,14 +22,14 @@ a {
   cursor: url('../cursor/toro.cur'), auto;
 }
 
- /* new link */
+/* new link */
 a:link {
-  color: purple;
+  color: plum;
 }
 
 /* visited link */
 a:visited {
-  color: purple;
+  color: plum;
 }
 
 /* hovering over link */
@@ -37,8 +39,12 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: pink;
+  color: blueviolet;
 } 
+
+.contribute {
+  font-size: 12px;
+}
 
 .headerpic {
   margin-top: -50px;
@@ -51,6 +57,7 @@ a:active {
   padding: 0;
   overflow: hidden;
   background-color: #333333;
+  border-radius: 20px;
 }
 
 .navlist {
@@ -63,6 +70,15 @@ a:active {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+#mailicon {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+#contributors {
+  height: 40px;
 }
 
 #footertext {
@@ -155,28 +171,32 @@ a:active {
   }
 }
 
+
+/*
+  !!! dark mode settings, to be configured later !!!
 @media (prefers-color-scheme: dark) {
   html {
     background: #0d0d0d;
     color: #ffffff;
   }
-  /* new link */
+  // new link
   a:link {
     color: plum;
   }
 
-  /* visited link */
+  // visited link
   a:visited {
     color: plum;
   }
 
-  /* hovering over link */
+  // hovering over link
   a:hover {
     color: hotpink;
   }
 
-  /* selected link */
+  // selected link
   a:active {
     color: blueviolet;
   } 
 }
+*/
