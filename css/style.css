@@ -171,6 +171,17 @@ a:active {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .navbar {
+    margin: 10px;
+    
+  }
+
+  .navlink {
+    padding: 10px 12px;
+  }
+}
+
 
 /*
   !!! dark mode settings, to be configured later !!!
