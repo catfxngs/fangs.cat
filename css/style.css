@@ -173,13 +173,16 @@ a:active {
 
 /* mobile styles */
 @media screen and (max-width: 800px) {
+  h1{
+    font-size: 28px;
+  }
   /* shrinks navbar proportions */
   .navbar {
     margin: 10px;
     
   }
   .navlink {
-    padding: 10px 12px;
+    padding: 10px 8px;
   }
 
   /* 
