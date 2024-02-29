@@ -7,19 +7,18 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
   font-family: 'Comic Sans MS';
   margin: 50px;
-}
-
-a {
-  cursor: url('../cursor/toro.cur'), auto;
 }
 
 /* new link */
@@ -40,15 +39,19 @@ a:hover {
 /* selected link */
 a:active {
   color: blueviolet;
-} 
+}
 
 .contribute {
   font-size: 12px;
 }
 
-.headerpic {
+#headerpic {
   margin-top: -85px;
-  height: 150px
+  height: 150px;
+}
+
+bts {
+  margin-bottom: 40px;
 }
 
 .navbar {
@@ -107,6 +110,7 @@ a:active {
   from {
     transform: translateX(0);
   }
+  
   to {
     transform: translateX(calc(-100% - var(--gap)));
   }
@@ -121,11 +125,13 @@ a:active {
 
 .marquee__top {
   position: fixed;
+  left: 0;
   top: 0;
 }
 
 .marquee__bot {
   position: fixed;
+  left: 0;
   bottom: 0;
 }
 
@@ -140,7 +146,7 @@ a:active {
 }
 
 /* pause on hover */
-.enable-animation.marquee:hover > * {
+.enable-animation.marquee:hover>* {
   animation-play-state: paused;
 }
 
@@ -166,6 +172,7 @@ a:active {
   from {
     transform: translateX(calc(100% + var(--gap)));
   }
+  
   to {
     transform: translateX(0);
   }
@@ -176,13 +183,13 @@ a:active {
   /* shrinks navbar proportions */
   .navbar {
     margin: 10px;
-    
   }
+  
   .navlink {
     padding: 10px 12px;
   }
-
-  /* 
+  
+  /*
   honestly more of a temporary fix, but to prevent the marquee 
   from overlapping with content, the bottom navbar is sticky 
   when reaching end of page! this is Fine for right now. it Works.
@@ -191,6 +198,7 @@ a:active {
     position: fixed;
     top: 0;
   }
+  
   .marquee__bot {
     position: sticky;
     bottom: 0;
@@ -209,20 +217,20 @@ a:active {
   a:link {
     color: plum;
   }
-
+  
   // visited link
   a:visited {
     color: plum;
   }
-
+  
   // hovering over link
   a:hover {
     color: hotpink;
   }
-
+  
   // selected link
   a:active {
     color: blueviolet;
-  } 
+  }
 }
 */
